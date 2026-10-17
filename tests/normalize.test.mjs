@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-import { normalize, loadAliases, matchModels } from '../scripts/normalize.mjs';
+import { normalize, loadAliases, matchModels, trigrams, similarity } from '../scripts/normalize.mjs';
 
 const aaModels = JSON.parse(readFileSync(new URL('./fixtures/aa.json', import.meta.url), 'utf8')).data;
 const orModels = JSON.parse(readFileSync(new URL('./fixtures/or.json', import.meta.url), 'utf8')).data;
@@ -69,4 +69,47 @@ test('loadAliases lit le fichier', () => {
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
+});
+
+test('trigrams renvoie un Set de fenêtres de 3', () => {
+  const t = trigrams('abcde');
+  assert.equal(t.size, 3);
+  assert.ok(t.has('abc'));
+  assert.ok(t.has('bcd'));
+  assert.ok(t.has('cde'));
+});
+
+test('similarity proche de 1 pour chaînes quasi identiques', () => {
+  assert.ok(similarity('glm-4-5v', 'z-ai/glm-4.5v') > 0.9);
+});
+
+test('similarity à 0 pour chaînes sans trigramme commun', () => {
+  assert.equal(similarity('a', 'b'), 0);
+});
+
+test('similarity à 0 pour chaîne vide', () => {
+  assert.equal(similarity('', 'abc'), 0);
+});
+
+test('match fuzzy par trigrammes quand le strict normalize diffère', () => {
+  const aa = aaModels.find((m) => m.slug === 'deepseek-v4-flash');
+  const m = matchModels([aa], orModels, {})[0];
+  assert.equal(m.method, 'fuzzy');
+  assert.equal(m.or.id, 'deepseek/deepseek-v4');
+  assert.equal(m.ambiguous, false);
+});
+
+test('modèle trop divergent reste unmatched (score < seuil 0.6)', () => {
+  const aa = aaModels.find((m) => m.slug === 'qwen3-5-omni-plus');
+  const m = matchModels([aa], orModels, {})[0];
+  assert.equal(m.method, 'unmatched');
+  assert.equal(m.or, null);
+});
+
+test('deux OR au score fuzzy très proche → unmatched + ambiguous', () => {
+  const aa = aaModels.find((m) => m.slug === 'super-model-v2');
+  const m = matchModels([aa], orModels, {})[0];
+  assert.equal(m.method, 'unmatched');
+  assert.equal(m.or, null);
+  assert.equal(m.ambiguous, true);
 });

@@ -2,5 +2,8 @@
   { "slug": "model-alpha", "name": "Model Alpha", "intelligence_index": 60, "artificial_analysis_coding_index": 55, "artificial_analysis_agentic_index": 80, "median_output_tokens_per_second": 100 },
   { "slug": "model-beta", "name": "Model Beta", "intelligence_index": 40, "artificial_analysis_coding_index": 45, "artificial_analysis_agentic_index": 30, "median_output_tokens_per_second": 200 },
   { "slug": "alias-special", "name": "Special", "intelligence_index": 55, "artificial_analysis_coding_index": 50, "artificial_analysis_agentic_index": 40, "median_output_tokens_per_second": 80 },
-  { "slug": "model-gamma", "name": "Model Gamma", "intelligence_index": null, "artificial_analysis_coding_index": null, "artificial_analysis_agentic_index": null, "median_output_tokens_per_second": null }
+  { "slug": "model-gamma", "name": "Model Gamma", "intelligence_index": null, "artificial_analysis_coding_index": null, "artificial_analysis_agentic_index": null, "median_output_tokens_per_second": null },
+  { "slug": "deepseek-v4-flash", "name": "DeepSeek V4 Flash", "intelligence_index": 70, "artificial_analysis_coding_index": 60, "artificial_analysis_agentic_index": 50, "median_output_tokens_per_second": 150 },
+  { "slug": "qwen3-5-omni-plus", "name": "Qwen 3.5 Omni Plus", "intelligence_index": 55, "artificial_analysis_coding_index": 50, "artificial_analysis_agentic_index": 45, "median_output_tokens_per_second": 120 },
+  { "slug": "super-model-v2", "name": "Super Model v2", "intelligence_index": 65, "artificial_analysis_coding_index": 60, "artificial_analysis_agentic_index": 55, "median_output_tokens_per_second": 90 }
 ] }

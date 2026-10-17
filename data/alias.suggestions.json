@@ -1,0 +1,1314 @@
+{
+  "mimo-v2-5-pro": {
+    "suggest": "xiaomi/mimo-v2.5-pro",
+    "score": 1
+  },
+  "gpt-6-sol-low": {
+    "suggest": "openai/gpt-6-sol-pro",
+    "score": 1
+  },
+  "qwen3-5-omni-plus": {
+    "suggest": "qwen/qwen3.7-plus",
+    "score": 0.333
+  },
+  "nova-2-0-omni-reasoning-medium": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "qwen3-5-122b-a10b-non-reasoning": {
+    "suggest": "qwen/qwen3.5-122b-a10b",
+    "score": 0.5
+  },
+  "gemma-4-12b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.304
+  },
+  "claude-3-5-haiku": {
+    "suggest": "anthropic/claude-haiku-5.5",
+    "score": 0.467
+  },
+  "gpt-35-turbo": {
+    "suggest": "openai/gpt-3.5-turbo-0613",
+    "score": 1
+  },
+  "gemini-2-0-flash-thinking-exp-0121": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.32
+  },
+  "gemma-3-270m": {
+    "suggest": "google/gemma-3-27b-it",
+    "score": 0.545
+  },
+  "gpt-5-1-codex": {
+    "suggest": "openai/gpt-5.1-codex-max",
+    "score": 1
+  },
+  "gpt-5-6-luna-low": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 1
+  },
+  "gpt-5-nano-minimal": {
+    "suggest": "openai/gpt-5-nano",
+    "score": 0.462
+  },
+  "o1-preview": {
+    "suggest": "tencent/hy4-preview",
+    "score": 0.5
+  },
+  "gpt-5-6-sol-low": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 1
+  },
+  "gpt-6-1-sol-xhigh": {
+    "suggest": "openai/gpt-6.1-sol-pro",
+    "score": 1
+  },
+  "qwen3-5-2b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.318
+  },
+  "claude-35-sonnet": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.533
+  },
+  "nova-2-0-pro-reasoning-medium": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "deepseek-r1-0120": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 1
+  },
+  "deepseek-r1-distill-llama-8b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.381
+  },
+  "qwen3-0.6b-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.526
+  },
+  "kimi-k2-6-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "granite-4-2-30b": {
+    "suggest": "ibm-granite/granite-4.2-8b",
+    "score": 0.583
+  },
+  "mistral-small-4-non-reasoning": {
+    "suggest": "mistralai/mistral-small-2603",
+    "score": 0.44
+  },
+  "claude-3-7-sonnet-thinking": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.348
+  },
+  "mimo-v2-0206": {
+    "suggest": "xiaomi/mimo-v2.6-pro",
+    "score": 0.8
+  },
+  "gemini-1-5-pro-may-2024": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.364
+  },
+  "qwen3-4b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.37
+  },
+  "gpt-6-luna-xhigh": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 1
+  },
+  "deepseek-v3-1-reasoning": {
+    "suggest": "deepseek/deepseek-chat-v3.1",
+    "score": 0.45
+  },
+  "mistral-large-2407": {
+    "suggest": "mistralai/mistral-large-2512",
+    "score": 1
+  },
+  "dbrx": {
+    "suggest": "qwen/qwen-2.5-72b-instruct",
+    "score": 0.316
+  },
+  "gpt-5-5": {
+    "suggest": "openai/gpt-5.5-pro",
+    "score": 1
+  },
+  "gpt-6-astra-xhigh": {
+    "suggest": "openai/gpt-6-astra",
+    "score": 1
+  },
+  "claude-3-haiku": {
+    "suggest": "anthropic/claude-haiku-5.5",
+    "score": 0.5
+  },
+  "qwen3-5-9b-non-reasoning": {
+    "suggest": "qwen/qwen3.5-9b",
+    "score": 0.333
+  },
+  "mistral-7b-instruct": {
+    "suggest": "mistralai/mistral-small-24b-instruct-2501",
+    "score": 0.478
+  },
+  "gemini-2-5-flash-reasoning": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.55
+  },
+  "mimo-v2-5-0424": {
+    "suggest": "xiaomi/mimo-v2.5-pro",
+    "score": 1
+  },
+  "grok-4-1-fast-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "grok-3": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.4
+  },
+  "mistral-small-3-1": {
+    "suggest": "mistralai/mistral-small-2603",
+    "score": 0.833
+  },
+  "claude-opus-4-5-thinking": {
+    "suggest": "anthropic/claude-opus-4.5",
+    "score": 0.556
+  },
+  "llama-nemotron-super-49b-v1-5": {
+    "suggest": "nvidia/nemotron-3.5-super-vl",
+    "score": 0.321
+  },
+  "gpt-5-6-terra-medium": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 1
+  },
+  "grok-2-1212": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.4
+  },
+  "mimo-v2-omni-0327": {
+    "suggest": "xiaomi/mimo-v2.6-pro",
+    "score": 0.444
+  },
+  "gpt-5-mini": {
+    "suggest": "openai/gpt-5-pro",
+    "score": 1
+  },
+  "qwen3-4b-2507-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.37
+  },
+  "gemini-1-5-pro": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.5
+  },
+  "gemini-1-0-ultra": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.308
+  },
+  "qwen3-1.7b-instruct": {
+    "suggest": "qwen/qwen-2.5-7b-instruct",
+    "score": 0.556
+  },
+  "granite-3-3-8b-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.333
+  },
+  "deepseek-v2": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 0.778
+  },
+  "grok-4-fast": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.375
+  },
+  "nvidia-nemotron-nano-9b-v2": {
+    "suggest": "nvidia/nemotron-3.5-lightning",
+    "score": 0.341
+  },
+  "gpt-6-astra": {
+    "suggest": "openai/gpt-6-astra",
+    "score": 1
+  },
+  "claude-opus-4-7-non-reasoning": {
+    "suggest": "anthropic/claude-opus-4.7",
+    "score": 0.455
+  },
+  "glm-4-5v-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "qwen3-5-4b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.318
+  },
+  "qwen3-5-397b-a17b-non-reasoning": {
+    "suggest": "qwen/qwen3.5-397b-a17b",
+    "score": 0.5
+  },
+  "sonar-pro": {
+    "suggest": "perplexity/sonar-pro",
+    "score": 1
+  },
+  "sarvam-m-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.389
+  },
+  "mistral-large-4": {
+    "suggest": "mistralai/mistral-large-4-0",
+    "score": 0.917
+  },
+  "qwen3-8-27b-non-reasoning": {
+    "suggest": "qwen/qwen3.8-27b",
+    "score": 0.368
+  },
+  "gpt-6-luna-medium": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 1
+  },
+  "gpt-5-4-mini-medium": {
+    "suggest": "openai/gpt-5.4-mini",
+    "score": 1
+  },
+  "qwen3-6-27b-non-reasoning": {
+    "suggest": "qwen/qwen3.6-27b",
+    "score": 0.368
+  },
+  "nex-n2-pro": {
+    "suggest": "nex-agi/nex-n2.5-mini",
+    "score": 0.75
+  },
+  "gpt-4-1": {
+    "suggest": "openai/gpt-4.1",
+    "score": 1
+  },
+  "gpt-6-1-sol-high": {
+    "suggest": "openai/gpt-6.1-sol-pro",
+    "score": 1
+  },
+  "qwen3-5-0-8b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.304
+  },
+  "gemini-1-5-flash": {
+    "suggest": "google/gemini-3.5-flash",
+    "score": 0.571
+  },
+  "gpt-5-6-luna": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 1
+  },
+  "solar-pro-2-preview": {
+    "suggest": "tencent/hy4-preview",
+    "score": 0.357
+  },
+  "mistral-small-3-2": {
+    "suggest": "mistralai/mistral-small-2603",
+    "score": 0.833
+  },
+  "kimi-k2": {
+    "suggest": "moonshotai/kimi-k2-0905",
+    "score": 1
+  },
+  "deepseek-r1-distill-qwen-1-5b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.364
+  },
+  "exaone-4-0-32b-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.318
+  },
+  "qwen3-14b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.357
+  },
+  "llama-3-1-instruct-405b": {
+    "suggest": "meta-llama/llama-3.1-8b-instruct",
+    "score": 0.524
+  },
+  "mimo-v2-5-pro-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "lfm2-5-1-2b-instruct": {
+    "suggest": "qwen/qwen-2.5-72b-instruct",
+    "score": 0.381
+  },
+  "gpt-5": {
+    "suggest": "openai/gpt-5-pro",
+    "score": 1
+  },
+  "mistral-large-3": {
+    "suggest": "mistralai/mistral-large-2512",
+    "score": 0.909
+  },
+  "gpt-5-4-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "gpt-5-2": {
+    "suggest": "openai/gpt-5.2-pro",
+    "score": 1
+  },
+  "apertus-70b-instruct": {
+    "suggest": "meta-llama/llama-3.3-70b-instruct",
+    "score": 0.391
+  },
+  "grok-4-1-fast": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.333
+  },
+  "deepseek-r1-distill-llama-70b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.364
+  },
+  "qwen3-0.6b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.357
+  },
+  "grok-1": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.4
+  },
+  "claude-4-opus": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.5
+  },
+  "qwen3-5-27b-non-reasoning": {
+    "suggest": "qwen/qwen3.5-27b",
+    "score": 0.368
+  },
+  "mistral-large-2": {
+    "suggest": "mistralai/mistral-large-2512",
+    "score": 0.909
+  },
+  "grok-4-20-0309-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "deepseek-v3-2-speciale": {
+    "suggest": "deepseek/deepseek-v3.2",
+    "score": 0.529
+  },
+  "gpt-6-sol-high": {
+    "suggest": "openai/gpt-6-sol-pro",
+    "score": 1
+  },
+  "gemma-4-e4b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.304
+  },
+  "gpt-5-4-low": {
+    "suggest": "openai/gpt-5.4-mini",
+    "score": 1
+  },
+  "claude-opus-4-6-adaptive": {
+    "suggest": "anthropic/claude-opus-4.6",
+    "score": 0.556
+  },
+  "nova-pro": {
+    "suggest": "amazon/nova-pro-v1",
+    "score": 0.5
+  },
+  "granite-4-0-350m": {
+    "suggest": "ibm-granite/granite-4.2-8b",
+    "score": 0.429
+  },
+  "grok-4-fast-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.35
+  },
+  "gpt-5-6-luna-medium": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 1
+  },
+  "qwen3-1.7b-instruct-reasoning": {
+    "suggest": "qwen/qwen-2.5-7b-instruct",
+    "score": 0.37
+  },
+  "kimi-linear-48b-a3b-instruct": {
+    "suggest": "qwen/qwen3-30b-a3b-instruct-2507",
+    "score": 0.345
+  },
+  "lfm2-5-1-2b-thinking": {
+    "suggest": "qwen/qwen3-235b-a22b-thinking-2507",
+    "score": 0.32
+  },
+  "k2-think-v2": {
+    "suggest": "moonshotai/kimi-k2-thinking",
+    "score": 0.357
+  },
+  "qwen3-max-preview": {
+    "suggest": "tencent/hy3-preview",
+    "score": 0.5
+  },
+  "gpt-5-4-pro": {
+    "suggest": "openai/gpt-5.4-mini",
+    "score": 1
+  },
+  "seed-oss-36b-instruct": {
+    "suggest": "qwen/qwen-2.5-7b-instruct",
+    "score": 0.304
+  },
+  "gpt-5-codex": {
+    "suggest": "openai/gpt-5.3-codex",
+    "score": 0.5
+  },
+  "mimo-v2-pro": {
+    "suggest": "xiaomi/mimo-v2.6-pro",
+    "score": 0.8
+  },
+  "deepseek-v4-pro-0424-high": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 1
+  },
+  "granite-4-0-h-small": {
+    "suggest": "ibm-granite/granite-4.0-h-micro",
+    "score": 0.444
+  },
+  "qwen3-30b-a3b-2507-reasoning": {
+    "suggest": "qwen/qwen3-30b-a3b",
+    "score": 0.5
+  },
+  "mistral-large": {
+    "suggest": "mistralai/mistral-large-2512",
+    "score": 1
+  },
+  "gpt-5-medium": {
+    "suggest": "openai/gpt-5-pro",
+    "score": 1
+  },
+  "grok-4": {
+    "suggest": "x-ai/grok-4.7",
+    "score": 0.75
+  },
+  "sonar": {
+    "suggest": "perplexity/sonar-pro",
+    "score": 1
+  },
+  "llama-3-2-instruct-11b-vision": {
+    "suggest": "meta-llama/llama-3.2-1b-instruct",
+    "score": 0.423
+  },
+  "deepseek-r1-qwen3-8b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.533
+  },
+  "qwen3-6-max": {
+    "suggest": "qwen/qwen3.8-max-0902",
+    "score": 0.6
+  },
+  "longcat-flash-lite": {
+    "suggest": "google/gemini-3.5-flash-lite",
+    "score": 0.318
+  },
+  "nova-2-0-lite-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "gpt-6-luna-non-reasoning": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 0.333
+  },
+  "grok-4-20-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "qwen3-5-4b": {
+    "suggest": "qwen/qwen3.5-9b",
+    "score": 0.5
+  },
+  "magistral-medium": {
+    "suggest": "mistralai/mistral-medium-3",
+    "score": 0.444
+  },
+  "kimi-k2-0905": {
+    "suggest": "moonshotai/kimi-k2-0905",
+    "score": 1
+  },
+  "qwen3-6-35b-a3b-non-reasoning": {
+    "suggest": "qwen/qwen3.6-35b-a3b",
+    "score": 0.455
+  },
+  "gemini-2-5-flash-reasoning-04-2025": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.5
+  },
+  "glm-4-6-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.438
+  },
+  "gpt-5-5-medium": {
+    "suggest": "openai/gpt-5.5-pro",
+    "score": 1
+  },
+  "hermes-4-llama-3-1-70b-reasoning": {
+    "suggest": "nousresearch/hermes-3-llama-3.1-70b",
+    "score": 0.444
+  },
+  "gpt-5-2-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "deepseek-v4-pro-0424-non-reasoning": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 0.4
+  },
+  "nvidia-nemotron-nano-12b-v2-vl-reasoning": {
+    "suggest": "nvidia/nemotron-3.5-lightning",
+    "score": 0.341
+  },
+  "gpt-5-6-sol-medium": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 1
+  },
+  "gpt-5-5-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "gpt-6-luna": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 1
+  },
+  "nova-2-0-lite-reasoning-low": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "gemma-4-26b-a4b-non-reasoning": {
+    "suggest": "google/gemma-4-26b-a4b-it",
+    "score": 0.417
+  },
+  "llama-3-2-instruct-3b": {
+    "suggest": "meta-llama/llama-3.2-1b-instruct",
+    "score": 0.579
+  },
+  "gemini-2-5-flash-lite-preview-09-2025": {
+    "suggest": "google/gemini-3.1-flash-lite-preview",
+    "score": 0.643
+  },
+  "llama-3-1-nemotron-instruct-70b": {
+    "suggest": "meta-llama/llama-3.1-70b-instruct",
+    "score": 0.429
+  },
+  "llama-3-1-instruct-8b": {
+    "suggest": "meta-llama/llama-3.1-8b-instruct",
+    "score": 0.579
+  },
+  "deepseek-v4-1-flash-non-reasoning": {
+    "suggest": "deepseek/deepseek-v4.1-flash-1017",
+    "score": 0.538
+  },
+  "gemma-4-e2b-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.304
+  },
+  "nova-2-0-lite": {
+    "suggest": "amazon/nova-2-lite-v1",
+    "score": 0.417
+  },
+  "deepseek-llm-67b-chat": {
+    "suggest": "deepseek/deepseek-chat",
+    "score": 0.444
+  },
+  "gpt-6-sol-medium": {
+    "suggest": "openai/gpt-6-sol-pro",
+    "score": 1
+  },
+  "claude-3-opus": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.5
+  },
+  "gemini-3-flash": {
+    "suggest": "google/gemini-3.8-flash",
+    "score": 0.615
+  },
+  "qwen3-max": {
+    "suggest": "qwen/qwen3.8-max-0902",
+    "score": 0.75
+  },
+  "gemini-2-0-flash-lite-001": {
+    "suggest": "google/gemini-2.5-flash-lite",
+    "score": 0.571
+  },
+  "gpt-5-6-sol-non-reasoning": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 0.333
+  },
+  "gemini-3-flash-reasoning": {
+    "suggest": "google/gemini-3-flash-preview",
+    "score": 0.531
+  },
+  "gpt-6-luna-high": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 1
+  },
+  "nemotron-3-5-bolt-74b-a9b": {
+    "suggest": "nvidia/nemotron-3.5-super-vl",
+    "score": 0.32
+  },
+  "ling-3-0-tiny": {
+    "suggest": "inclusionai/ling-3.0-flash",
+    "score": 0.308
+  },
+  "gpt-5-low": {
+    "suggest": "openai/gpt-5-pro",
+    "score": 1
+  },
+  "qwen3-max-thinking": {
+    "suggest": "qwen/qwen3-vl-30b-a3b-thinking",
+    "score": 0.429
+  },
+  "llama-3-2-instruct-1b": {
+    "suggest": "meta-llama/llama-3.2-1b-instruct",
+    "score": 0.579
+  },
+  "gpt-5-6-terra-high": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 1
+  },
+  "glm-4-7-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "llama-3-instruct-8b": {
+    "suggest": "meta-llama/llama-3.2-1b-instruct",
+    "score": 0.526
+  },
+  "hermes-4-llama-3-1-405b-reasoning": {
+    "suggest": "nousresearch/hermes-3-llama-3.1-405b",
+    "score": 0.464
+  },
+  "mimo-v2-flash": {
+    "suggest": "xiaomi/mimo-v2.6-flash",
+    "score": 0.583
+  },
+  "granite-4-1-8b": {
+    "suggest": "ibm-granite/granite-4.2-8b",
+    "score": 0.5
+  },
+  "deepseek-v4-pro": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 1
+  },
+  "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
+    "suggest": "google/gemini-3.1-flash-lite-preview",
+    "score": 0.486
+  },
+  "gpt-5-2-medium": {
+    "suggest": "openai/gpt-5.2-pro",
+    "score": 1
+  },
+  "magistral-medium-2509": {
+    "suggest": "mistralai/mistral-medium-3",
+    "score": 0.444
+  },
+  "gpt-5-6-luna-xhigh": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 1
+  },
+  "QwQ-32B-Preview": {
+    "suggest": "tencent/hy4-preview",
+    "score": 0.357
+  },
+  "ling-flash-2-0": {
+    "suggest": "inclusionai/ling-3.1-flash",
+    "score": 0.385
+  },
+  "apertus-8b-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.364
+  },
+  "deepseek-v4-flash-0420-high": {
+    "suggest": "deepseek/deepseek-v4-flash-0731",
+    "score": 1
+  },
+  "deepseek-v2-5-sep-2024": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 0.583
+  },
+  "claude-4-opus-thinking": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.3
+  },
+  "gpt-5-6-sol-high": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 1
+  },
+  "gpt-3-5-turbo-0613": {
+    "suggest": "openai/gpt-3.5-turbo-0613",
+    "score": 1
+  },
+  "nemotron-3-nano-omni-30b-a3b": {
+    "suggest": "nvidia/nemotron-3-nano-30b-a3b",
+    "score": 0.652
+  },
+  "gemini-1-0-pro": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.5
+  },
+  "deepseek-coder-v2": {
+    "suggest": "deepseek/deepseek-chat",
+    "score": 0.438
+  },
+  "olmo-3-7b-instruct": {
+    "suggest": "qwen/qwen-2.5-7b-instruct",
+    "score": 0.421
+  },
+  "grok-4-3-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.35
+  },
+  "claude-4-5-sonnet-thinking": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.348
+  },
+  "claude-4-5-sonnet": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.533
+  },
+  "granite-4-1-3b": {
+    "suggest": "ibm-granite/granite-4.2-8b",
+    "score": 0.5
+  },
+  "ling-2-6-flash": {
+    "suggest": "inclusionai/ling-3.1-flash",
+    "score": 0.385
+  },
+  "glm-5-1-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "gemini-1-5-flash-8b": {
+    "suggest": "google/gemini-3.5-flash",
+    "score": 0.5
+  },
+  "olmo-3-1-32b-instruct": {
+    "suggest": "qwen/qwen-2.5-72b-instruct",
+    "score": 0.364
+  },
+  "mimo-v2-omni": {
+    "suggest": "xiaomi/mimo-v2.6-pro",
+    "score": 0.444
+  },
+  "ministral-3-8b": {
+    "suggest": "mistralai/ministral-8b-2512",
+    "score": 0.769
+  },
+  "nemotron-cascade-2-30b-a3b": {
+    "suggest": "nvidia/nemotron-3-nano-30b-a3b",
+    "score": 0.37
+  },
+  "gpt-5-6-terra-non-reasoning": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 0.4
+  },
+  "llama-3-2-instruct-90b-vision": {
+    "suggest": "meta-llama/llama-3.2-1b-instruct",
+    "score": 0.423
+  },
+  "k-exaone-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "qwen3-8b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.423
+  },
+  "claude-21": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.364
+  },
+  "gpt-5-6-terra-xhigh": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 1
+  },
+  "gpt-4-1-mini": {
+    "suggest": "openai/gpt-4.1",
+    "score": 1
+  },
+  "nova-2-0-pro": {
+    "suggest": "amazon/nova-pro-v1",
+    "score": 0.333
+  },
+  "granite-4-0-nano-1b": {
+    "suggest": "ibm-granite/granite-4.0-h-micro",
+    "score": 0.412
+  },
+  "gpt-6-1-sol-medium": {
+    "suggest": "openai/gpt-6.1-sol-pro",
+    "score": 1
+  },
+  "gpt-6-astra-low": {
+    "suggest": "openai/gpt-6-astra",
+    "score": 1
+  },
+  "granite-4-0-h-350m": {
+    "suggest": "ibm-granite/granite-4.0-h-micro",
+    "score": 0.471
+  },
+  "qwen3-5-0-8b": {
+    "suggest": "qwen/qwen3.5-9b",
+    "score": 0.444
+  },
+  "claude-4-sonnet-thinking": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.364
+  },
+  "gemma-3n-e4b": {
+    "suggest": "google/gemma-3-4b-it",
+    "score": 0.333
+  },
+  "qwen3-vl-235b-a22b-reasoning": {
+    "suggest": "qwen/qwen3-vl-235b-a22b-instruct",
+    "score": 0.433
+  },
+  "deepseek-r1": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 1
+  },
+  "gpt-5-4": {
+    "suggest": "openai/gpt-5.4-mini",
+    "score": 1
+  },
+  "gemma-3n-e2b": {
+    "suggest": "qwen/qwen-2.5-72b-instruct",
+    "score": 0.348
+  },
+  "gpt-5-6-luna-high": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 1
+  },
+  "llama-3-instruct-70b": {
+    "suggest": "meta-llama/llama-3.3-70b-instruct",
+    "score": 0.55
+  },
+  "nvidia-nemotron-nano-12b-v2-vl": {
+    "suggest": "nvidia/nemotron-3.5-lightning",
+    "score": 0.318
+  },
+  "gemini-1-5-flash-may-2024": {
+    "suggest": "google/gemini-3.5-flash",
+    "score": 0.471
+  },
+  "claude-35-sonnet-june-24": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.381
+  },
+  "deepseek-v4-flash-0420-non-reasoning": {
+    "suggest": "deepseek/deepseek-v4-flash-0731",
+    "score": 0.52
+  },
+  "gpt-5-4-mini-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "deepseek-v3-2-reasoning-0925": {
+    "suggest": "deepseek/deepseek-v3.2-exp",
+    "score": 0.522
+  },
+  "qwen3-32b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-30b-a3b-instruct-2507",
+    "score": 0.379
+  },
+  "qwen3-4b-2507-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.556
+  },
+  "gemma-4-e2b": {
+    "suggest": "google/gemma-4-31b-it",
+    "score": 0.333
+  },
+  "gpt-5-5-high": {
+    "suggest": "openai/gpt-5.5-pro",
+    "score": 1
+  },
+  "llama-3-1-nemotron-nano-4b-reasoning": {
+    "suggest": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "score": 0.348
+  },
+  "gpt-6-1-sol": {
+    "suggest": "openai/gpt-6.1-sol-pro",
+    "score": 1
+  },
+  "deepseek-r1-distill-qwen-14b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.364
+  },
+  "claude-3-sonnet": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.571
+  },
+  "gemini-3-pro-low": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.571
+  },
+  "nova-2-0-omni-reasoning-low": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "arctic-instruct": {
+    "suggest": "qwen/qwen-2.5-7b-instruct",
+    "score": 0.3
+  },
+  "gpt-4o-chatgpt": {
+    "suggest": "openai/gpt-4o-mini",
+    "score": 0.333
+  },
+  "hy3-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "gpt-4o-mini": {
+    "suggest": "openai/gpt-4o-mini",
+    "score": 1
+  },
+  "deephermes-3-llama-3-1-8b-preview": {
+    "suggest": "nousresearch/hermes-3-llama-3.1-70b",
+    "score": 0.429
+  },
+  "qwen3-omni-30b-a3b-reasoning": {
+    "suggest": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "score": 0.436
+  },
+  "qwen-2-5-max": {
+    "suggest": "qwen/qwen3.8-max-0902",
+    "score": 0.333
+  },
+  "kimi-k2-5-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "gpt-5-4-mini": {
+    "suggest": "openai/gpt-5.4-mini",
+    "score": 1
+  },
+  "qwen3-235b-a22b-instruct-reasoning": {
+    "suggest": "qwen/qwen3-vl-235b-a22b-instruct",
+    "score": 0.531
+  },
+  "gpt-5-mini-minimal": {
+    "suggest": "minimax/minimax-m3",
+    "score": 0.333
+  },
+  "deepseek-v2-5": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 0.7
+  },
+  "gemini-2-0-flash": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.571
+  },
+  "gpt-5-6-terra": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 1
+  },
+  "mimo-v2-flash-reasoning": {
+    "suggest": "xiaomi/mimo-v2.6-flash",
+    "score": 0.333
+  },
+  "deepseek-v4-pro-0424": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 1
+  },
+  "qwen3-32b-instruct": {
+    "suggest": "qwen/qwen3-30b-a3b-instruct-2507",
+    "score": 0.55
+  },
+  "gpt-6-luna-low": {
+    "suggest": "openai/gpt-6-luna-pro",
+    "score": 1
+  },
+  "gpt-4o": {
+    "suggest": "openai/gpt-4o-mini",
+    "score": 1
+  },
+  "gpt-5-4-nano-non-reasoning": {
+    "suggest": "openai/gpt-5.4-nano",
+    "score": 0.389
+  },
+  "claude-4-5-haiku": {
+    "suggest": "anthropic/claude-haiku-5.5",
+    "score": 0.467
+  },
+  "gpt-5-mini-medium": {
+    "suggest": "openai/gpt-5-pro",
+    "score": 1
+  },
+  "gpt-5-minimal": {
+    "suggest": "minimax/minimax-m3",
+    "score": 0.333
+  },
+  "diffusiongemma-26b-a4b": {
+    "suggest": "google/gemma-4-26b-a4b-it",
+    "score": 0.304
+  },
+  "llama-3-3-nemotron-super-49b": {
+    "suggest": "nvidia/nemotron-3.5-super-vl",
+    "score": 0.333
+  },
+  "gpt-6-sol": {
+    "suggest": "openai/gpt-6-sol-pro",
+    "score": 1
+  },
+  "deepseek-coder-v2-lite": {
+    "suggest": "deepseek/deepseek-chat",
+    "score": 0.35
+  },
+  "gemini-2-5-flash-preview-09-2025-reasoning": {
+    "suggest": "google/gemini-3-flash-preview",
+    "score": 0.438
+  },
+  "gpt-5-5-low": {
+    "suggest": "openai/gpt-5.5-pro",
+    "score": 1
+  },
+  "glm-4-7-flash-non-reasoning": {
+    "suggest": "z-ai/glm-4.7-flash",
+    "score": 0.4
+  },
+  "qwen3-next-80b-a3b-reasoning": {
+    "suggest": "qwen/qwen3-next-80b-a3b-thinking",
+    "score": 0.483
+  },
+  "qwen3-max-thinking-preview": {
+    "suggest": "qwen/qwen3-vl-30b-a3b-thinking",
+    "score": 0.321
+  },
+  "gpt-5-6-terra-low": {
+    "suggest": "openai/gpt-5.6-terra-pro",
+    "score": 1
+  },
+  "qwen3-vl-30b-a3b-reasoning": {
+    "suggest": "qwen/qwen3-vl-30b-a3b-thinking",
+    "score": 0.444
+  },
+  "devstral-small-2": {
+    "suggest": "mistralai/mistral-small-2603",
+    "score": 0.571
+  },
+  "claude-4-sonnet": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.571
+  },
+  "gemma-4-31b-non-reasoning": {
+    "suggest": "google/gemma-4-31b-it",
+    "score": 0.333
+  },
+  "gpt-5-1-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "gemini-3-pro": {
+    "suggest": "google/gemini-2.5-pro",
+    "score": 0.571
+  },
+  "gemma-3-1b": {
+    "suggest": "google/gemma-3-12b-it",
+    "score": 0.5
+  },
+  "glm-4-6v-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "qwen3-vl-32b-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "gpt-6-sol-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "granite-4-1-30b": {
+    "suggest": "ibm-granite/granite-4.2-8b",
+    "score": 0.462
+  },
+  "deepseek-v4-pro-non-reasoning": {
+    "suggest": "deepseek/deepseek-v4-pro-0813",
+    "score": 0.4
+  },
+  "claude-sonnet-5-non-reasoning": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.5
+  },
+  "deepseek-v3-2-reasoning": {
+    "suggest": "deepseek/deepseek-v3.2",
+    "score": 0.5
+  },
+  "exaone-4-0-1-2b-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.318
+  },
+  "gemma-4-e4b": {
+    "suggest": "google/gemma-4-31b-it",
+    "score": 0.333
+  },
+  "deepseek-v4-flash-0420": {
+    "suggest": "deepseek/deepseek-v4-flash-0731",
+    "score": 1
+  },
+  "claude-3-7-sonnet": {
+    "suggest": "anthropic/claude-sonnet-5",
+    "score": 0.533
+  },
+  "gpt-5-6-sol": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 1
+  },
+  "gpt-5-6-sol-xhigh": {
+    "suggest": "openai/gpt-5.6-sol-pro",
+    "score": 1
+  },
+  "gpt-6-sol-xhigh": {
+    "suggest": "openai/gpt-6-sol-pro",
+    "score": 1
+  },
+  "granite-4-0-h-nano-1b": {
+    "suggest": "ibm-granite/granite-4.0-h-micro",
+    "score": 0.421
+  },
+  "deepseek-v4-1-flash": {
+    "suggest": "deepseek/deepseek-v4.1-flash-1017",
+    "score": 1
+  },
+  "gpt-5-6-luna-non-reasoning": {
+    "suggest": "openai/gpt-5.6-luna-pro",
+    "score": 0.368
+  },
+  "claude-2": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.4
+  },
+  "pixtral-large-2411": {
+    "suggest": "mistralai/mistral-large-2512",
+    "score": 0.538
+  },
+  "qwen3-vl-8b-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.35
+  },
+  "phi-3-mini": {
+    "suggest": "microsoft/phi-4",
+    "score": 0.333
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "suggest": "deepseek/deepseek-r1-0528",
+    "score": 0.364
+  },
+  "gemini-2-0-flash-thinking-exp-1219": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.32
+  },
+  "gpt-6-astra-high": {
+    "suggest": "openai/gpt-6-astra",
+    "score": 1
+  },
+  "gpt-5-5-pro": {
+    "suggest": "openai/gpt-5.5-pro",
+    "score": 1
+  },
+  "qwen3-4b-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.556
+  },
+  "gpt-6-1-sol-low": {
+    "suggest": "openai/gpt-6.1-sol-pro",
+    "score": 1
+  },
+  "glm-5-2-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.368
+  },
+  "gpt-6-astra-medium": {
+    "suggest": "openai/gpt-6-astra",
+    "score": 1
+  },
+  "cogito-v2-1-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.35
+  },
+  "gpt-5-chatgpt": {
+    "suggest": "openai/gpt-5.2-chat",
+    "score": 0.364
+  },
+  "solar-pro-2-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "muse-spark": {
+    "suggest": "meta/muse-spark-1.3",
+    "score": 0.778
+  },
+  "grok-3-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.438
+  },
+  "qwen3-14b-instruct": {
+    "suggest": "qwen/qwen3-vl-8b-instruct",
+    "score": 0.526
+  },
+  "qwen3-5-35b-a3b-non-reasoning": {
+    "suggest": "qwen/qwen3.5-35b-a3b",
+    "score": 0.455
+  },
+  "glm-5-non-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.389
+  },
+  "nvidia-nemotron-nano-9b-v2-reasoning": {
+    "suggest": "nvidia/nemotron-3.5-lightning",
+    "score": 0.368
+  },
+  "claude-sonnet-4-6-non-reasoning-low-effort": {
+    "suggest": "anthropic/claude-sonnet-4.6",
+    "score": 0.414
+  },
+  "claude-4-1-opus": {
+    "suggest": "anthropic/claude-opus-5",
+    "score": 0.462
+  },
+  "nova-2-0-pro-reasoning-low": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.412
+  },
+  "qwen3-235b-a22b-instruct-2507-reasoning": {
+    "suggest": "qwen/qwen3-vl-235b-a22b-instruct",
+    "score": 0.531
+  },
+  "jamba-reasoning-3b": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.389
+  },
+  "qwen3-vl-4b-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.35
+  },
+  "lfm2-24b-a2b": {
+    "suggest": "liquid/lfm-2.5-24b-a2b",
+    "score": 0.545
+  },
+  "nova-2-0-lite-reasoning-medium": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.333
+  },
+  "gpt-5-1-codex-mini": {
+    "suggest": "openai/gpt-5.1-codex-max",
+    "score": 1
+  },
+  "gemini-2-0-flash-experimental": {
+    "suggest": "google/gemini-2.5-flash",
+    "score": 0.308
+  },
+  "deepseek-v4-flash": {
+    "suggest": "deepseek/deepseek-v4-flash-0731",
+    "score": 1
+  },
+  "gemma-4-12b": {
+    "suggest": "google/gemma-4-31b-it",
+    "score": 0.333
+  },
+  "grok-3-mini-reasoning": {
+    "suggest": "perplexity/sonar-reasoning-pro",
+    "score": 0.438
+  }
+}

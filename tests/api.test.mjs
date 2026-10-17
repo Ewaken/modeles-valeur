@@ -66,7 +66,7 @@ test('fetchOpenRouterModels parse les prix en conservant les overrides', async (
   resetNetwork();
   process.env.MODELES_VALEUR_CACHE_DIR = freshCacheDir();
   const r = await fetchOpenRouterModels({ force: true });
-  assert.equal(r.length, 3);
+  assert.equal(r.length, 7);
   assert.equal(r[0].pricing.overrides.length, 2);
 });
 

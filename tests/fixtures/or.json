@@ -4,5 +4,9 @@
       { "utc_days": ["monday","tuesday","wednesday","thursday","friday"], "utc_start": 900, "utc_end": 1700, "prompt": "0.000002", "completion": "0.00001", "input_cache_read": "0.000001" }
   ] } },
   { "id": "provider/model-beta", "name": "Model Beta", "pricing": { "prompt": "0.0000001", "completion": "0.0000005", "input_cache_read": "0.00000005", "overrides": [] } },
-  { "id": "vendor/thing", "name": "Totally Different Name", "pricing": { "prompt": "0.000005", "completion": "0.00002", "input_cache_read": "0.000001", "overrides": [] } }
+  { "id": "vendor/thing", "name": "Totally Different Name", "pricing": { "prompt": "0.000005", "completion": "0.00002", "input_cache_read": "0.000001", "overrides": [] } },
+  { "id": "deepseek/deepseek-v4", "name": "DeepSeek V4", "pricing": { "prompt": "0.000001", "completion": "0.000005", "input_cache_read": "0.0000005", "overrides": [] } },
+  { "id": "qwen/qwen3.5-9b", "name": "Qwen 3.5 9B", "pricing": { "prompt": "0.0000005", "completion": "0.000002", "input_cache_read": "0.00000025", "overrides": [] } },
+  { "id": "sup/super-model-v2a", "name": "Super Model v2a", "pricing": { "prompt": "0.000001", "completion": "0.000004", "input_cache_read": "0.0000005", "overrides": [] } },
+  { "id": "sup2/super-model-v2b", "name": "Super Model v2b", "pricing": { "prompt": "0.0000008", "completion": "0.000003", "input_cache_read": "0.0000004", "overrides": [] } }
 ] }
