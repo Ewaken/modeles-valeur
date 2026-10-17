@@ -38,7 +38,7 @@ after(() => {
   delete process.env.MODELES_VALEUR_ALIASES;
 });
 
-import { main } from '../scripts/rank.mjs';
+import { main, isDirectRun } from '../scripts/rank.mjs';
 
 async function run(argv) {
   const orig = process.stdout.write;
@@ -88,4 +88,12 @@ test('--top N tronque', async () => {
   assert.equal(code, 0);
   const obj = JSON.parse(out);
   assert.equal(obj.classement.length, 2);
+});
+
+test('le garde CLI compare les chemins sans translation de slash', () => {
+  // Paths POSIX et Windows doivent matcher process.argv[1] tels quels.
+  assert.equal(isDirectRun('/home/user/scripts/rank.mjs', '/home/user/scripts/rank.mjs'), true);
+  assert.equal(isDirectRun('C:\\skills\\rank.mjs', 'C:\\skills\\rank.mjs'), true);
+  assert.equal(isDirectRun('/a/rank.mjs', '/b/rank.mjs'), false);
+  assert.equal(isDirectRun('/a/rank.mjs', undefined), false);
 });

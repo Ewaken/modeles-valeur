@@ -162,7 +162,14 @@ export async function main(argv) {
   }
 }
 
+// Vrai quand le fichier est lancé directement (process.argv[1] = ce fichier).
+// Comparaison exacte : une translation de slash casserait la détection sur
+// POSIX (fileURLToPath y renvoie des '/', pas des '\').
+export function isDirectRun(resolvedPath, argv1) {
+  return !!argv1 && resolvedPath === argv1;
+}
+
 // Point d'entrée CLI (exécuté seulement quand le fichier est lancé directement).
-if (process.argv[1] && fileURLToPath(import.meta.url).replaceAll('/', '\\') === process.argv[1]) {
+if (isDirectRun(fileURLToPath(import.meta.url), process.argv[1])) {
   main(process.argv.slice(2)).then((code) => process.exit(code));
 }
