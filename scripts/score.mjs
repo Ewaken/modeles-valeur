@@ -48,13 +48,10 @@ export function paretoFrontier(points) {
   return nonDomines;
 }
 
-// Frontière de Pareto en tête, puis valeur décroissante.
+// Frontière de Pareto en tête (déjà précalculée par buildPoints), puis valeur décroissante.
 export function rank(points) {
-  const frontier = paretoFrontier(points);
   return [...points].sort((a, b) => {
-    const hautA = frontier.has(a);
-    const hautB = frontier.has(b);
-    if (hautA !== hautB) return hautA ? -1 : 1;
+    if (a.pareto !== b.pareto) return a.pareto ? -1 : 1;
     return b.value - a.value;
   });
 }

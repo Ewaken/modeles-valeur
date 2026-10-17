@@ -1,4 +1,4 @@
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadApiKey, fetchAAModels, fetchOpenRouterModels } from './api.mjs';
 import { matchModels, loadAliases } from './normalize.mjs';
@@ -166,7 +166,7 @@ export async function main(argv) {
 // Comparaison exacte : une translation de slash casserait la détection sur
 // POSIX (fileURLToPath y renvoie des '/', pas des '\').
 export function isDirectRun(resolvedPath, argv1) {
-  return !!argv1 && resolvedPath === argv1;
+  return !!argv1 && resolvedPath === resolve(argv1);
 }
 
 // Point d'entrée CLI (exécuté seulement quand le fichier est lancé directement).

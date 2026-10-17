@@ -4,15 +4,9 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 
-const aaFixture = JSON.parse(
-  readFileSync(resolve(process.cwd(), 'tests/fixtures/aa.json'), 'utf8')
-);
-const orFixture = JSON.parse(
-  readFileSync(resolve(process.cwd(), 'tests/fixtures/or.json'), 'utf8')
-);
-const aliasFixture = JSON.parse(
-  readFileSync(resolve(process.cwd(), 'tests/fixtures/alias.json'), 'utf8')
-);
+const aaFixture = JSON.parse(readFileSync(new URL('./fixtures/aa.json', import.meta.url), 'utf8'));
+const orFixture = JSON.parse(readFileSync(new URL('./fixtures/or.json', import.meta.url), 'utf8'));
+const aliasFixture = JSON.parse(readFileSync(new URL('./fixtures/alias.json', import.meta.url), 'utf8'));
 
 globalThis.fetch = async (url) => {
   const data = String(url).includes('artificialanalysis') ? aaFixture : orFixture;
@@ -90,10 +84,12 @@ test('--top N tronque', async () => {
   assert.equal(obj.classement.length, 2);
 });
 
-test('le garde CLI compare les chemins sans translation de slash', () => {
-  // Paths POSIX et Windows doivent matcher process.argv[1] tels quels.
-  assert.equal(isDirectRun('/home/user/scripts/rank.mjs', '/home/user/scripts/rank.mjs'), true);
-  assert.equal(isDirectRun('C:\\skills\\rank.mjs', 'C:\\skills\\rank.mjs'), true);
-  assert.equal(isDirectRun('/a/rank.mjs', '/b/rank.mjs'), false);
-  assert.equal(isDirectRun('/a/rank.mjs', undefined), false);
+test('le garde CLI compare les chemins après résolution', () => {
+  // Chemin relatif : resolve le rend absolu → match.
+  const abs = resolve('./some/script.mjs');
+  assert.equal(isDirectRun(abs, './some/script.mjs'), true);
+  // Chemins différents → no match.
+  assert.equal(isDirectRun(abs, './other/script.mjs'), false);
+  // argv1 manquant → no match.
+  assert.equal(isDirectRun(abs, undefined), false);
 });

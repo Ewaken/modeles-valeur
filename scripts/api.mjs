@@ -68,7 +68,10 @@ async function fetchWithCache(name, url, ttl, force, init) {
     return data;
   } catch (err) {
     // Si un run précédent a laissé un cache exploitable, on le préserve.
-    if (cache) return cache.data;
+    if (cache) {
+      console.error('⚠ Cache utilisé — impossible de rafraîchir les données');
+      return cache.data;
+    }
     throw new Error(
       `Échec de récupération des modèles (${url}) : ${err.message}. ` +
         'Si le réseau est temporairement indisponible, un cache récent reste utilisable.'
@@ -81,8 +84,10 @@ async function attemptFetch(url, attempts, init) {
   for (let i = 0; i < attempts; i++) {
     try {
       const res = await fetch(url, init);
-      // Une réponse non-OK (rate-limit 429, 5xx) compte comme un échec retentable.
       if (res.ok) return res;
+      if (res.status !== 429 && res.status >= 400 && res.status < 500) {
+        throw new Error(`HTTP ${res.status} (non retryable)`);
+      }
       lastErr = new Error(`HTTP ${res.status}`);
     } catch (err) {
       lastErr = err;
