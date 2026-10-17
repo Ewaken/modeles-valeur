@@ -60,8 +60,8 @@ function parseArgs(argv) {
   if (!['current', 'min', 'peak'].includes(opts.scenario)) {
     throw new Error(`--scenario invalide : ${opts.scenario} (attendu current|min|peak)`);
   }
-  if (!['intelligence', 'coding', 'math'].includes(opts.index)) {
-    throw new Error(`--index invalide : ${opts.index} (attendu intelligence|coding|math)`);
+  if (!['intelligence', 'coding', 'agentic'].includes(opts.index)) {
+    throw new Error(`--index invalide : ${opts.index} (attendu intelligence|coding|agentic)`);
   }
   return opts;
 }

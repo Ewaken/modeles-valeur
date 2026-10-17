@@ -4,12 +4,12 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 
-const aaFixture = JSON.parse(readFileSync(new URL('./fixtures/aa.json', import.meta.url), 'utf8'));
+const aaRawFixture = JSON.parse(readFileSync(new URL('./fixtures/aa-raw.json', import.meta.url), 'utf8'));
 const orFixture = JSON.parse(readFileSync(new URL('./fixtures/or.json', import.meta.url), 'utf8'));
 const aliasFixture = JSON.parse(readFileSync(new URL('./fixtures/alias.json', import.meta.url), 'utf8'));
 
 globalThis.fetch = async (url) => {
-  const data = String(url).includes('artificialanalysis') ? aaFixture : orFixture;
+  const data = String(url).includes('artificialanalysis') ? aaRawFixture : orFixture;
   return { ok: true, json: async () => data };
 };
 
@@ -35,17 +35,20 @@ after(() => {
 import { main, isDirectRun } from '../scripts/rank.mjs';
 
 async function run(argv) {
-  const orig = process.stdout.write;
+  const origOut = process.stdout.write;
+  const origErr = process.stderr.write;
+  const origConsoleError = console.error;
   let out = '';
-  process.stdout.write = (s) => {
-    out += s;
-    return true;
-  };
+  process.stdout.write = (s) => { out += s; return true; };
+  process.stderr.write = (s) => { out += s; return true; };
+  console.error = (...args) => { out += args.join(' ') + '\n'; };
   try {
     const code = await main(argv);
     return { code, out };
   } finally {
-    process.stdout.write = orig;
+    process.stdout.write = origOut;
+    process.stderr.write = origErr;
+    console.error = origConsoleError;
   }
 }
 
@@ -82,6 +85,12 @@ test('--top N tronque', async () => {
   assert.equal(code, 0);
   const obj = JSON.parse(out);
   assert.equal(obj.classement.length, 2);
+});
+
+test('--index math est rejeté', async () => {
+  const { code, out } = await run(['--index', 'math']);
+  assert.equal(code, 1);
+  assert.match(out, /agentic/);
 });
 
 test('le garde CLI compare les chemins après résolution', () => {

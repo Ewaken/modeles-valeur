@@ -1,9 +1,9 @@
 import { computeCostPerTask, loadWorkloads, pricingScenario } from './cost.mjs';
 
-// Qualité selon l'indice demandé : intelligence | coding | math.
+// Qualité selon l'indice demandé : intelligence | coding | agentic.
 export function qualityOf(aa, index) {
   if (index === 'coding') return aa.artificial_analysis_coding_index ?? null;
-  if (index === 'math') return aa.artificial_analysis_math_index ?? null;
+  if (index === 'agentic') return aa.artificial_analysis_agentic_index ?? null;
   return aa.intelligence_index ?? null;
 }
 

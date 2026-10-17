@@ -53,7 +53,7 @@ test('candidat ambigu (plusieurs OR au même nom normalisé) -> unmatched + ambi
     { id: 'a/modele', name: 'Provider/Modele', pricing: {} },
     { id: 'b/modele', name: 'Vendor/Modele', pricing: {} },
   ];
-  const aa = [{ slug: 'modele', name: 'Modele', intelligence_index: 50, artificial_analysis_coding_index: null, artificial_analysis_math_index: null, median_output_tokens_per_second: null }];
+  const aa = [{ slug: 'modele', name: 'Modele', intelligence_index: 50, artificial_analysis_coding_index: null, artificial_analysis_agentic_index: null, median_output_tokens_per_second: null }];
   const m = matchModels(aa, dupOr, {})[0];
   assert.equal(m.method, 'unmatched');
   assert.equal(m.or, null);

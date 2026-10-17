@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-import { buildPoints, rank } from '../scripts/score.mjs';
+import { buildPoints, rank, qualityOf } from '../scripts/score.mjs';
 
 const FIX = resolve(process.cwd(), 'tests/fixtures');
 const aaModels = JSON.parse(readFileSync(resolve(FIX, 'aa.json'), 'utf8')).data;
@@ -50,4 +50,9 @@ test('qualité nulle exclue du classement', () => {
 test('classement : frontière puis valeur', () => {
   const points = buildPoints(matches, opts);
   assert.deepEqual(rank(points).map((p) => p.aa.slug), ['model-beta', 'model-alpha', 'alias-special']);
+});
+
+test('qualityOf agentic lit le bon champ', () => {
+  const a = { intelligence_index: 60, artificial_analysis_coding_index: 55, artificial_analysis_agentic_index: 80 };
+  assert.equal(qualityOf(a, 'agentic'), 80);
 });

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const SKILL_DIR = dirname(dirname(fileURLToPath(import.meta.url)));
 const DEFAULT_CACHE_DIR = join(SKILL_DIR, 'data', '.cache');
 
-const AA_URL = 'https://artificialanalysis.ai/api/v2/language/models';
+const AA_URL = 'https://artificialanalysis.ai/api/v2/language/models/free';
 const OR_URL = 'https://openrouter.ai/api/v1/models';
 const TTL = { aa: 6 * 60 * 60 * 1000, or: 60 * 60 * 1000 };
 
@@ -47,33 +47,62 @@ export function writeCache(name, data) {
 }
 
 export async function fetchOpenRouterModels({ force = false } = {}) {
-  return fetchWithCache('or', OR_URL, TTL.or, force);
+  return withCache('or', TTL.or, force, async () => {
+    const res = await attemptFetch(OR_URL, 2);
+    return (await res.json()).data;
+  }, OR_URL);
 }
 
 export async function fetchAAModels(apiKey, { force = false } = {}) {
-  return fetchWithCache('aa', AA_URL, TTL.aa, force, {
-    headers: { 'x-api-key': apiKey },
-  });
+  return withCache('aa', TTL.aa, force, () => fetchAllAAPages(apiKey), AA_URL);
 }
 
-async function fetchWithCache(name, url, ttl, force, init) {
+// Agrège toutes les pages du endpoint gratuit AA, dédoublonne par slug, aplatit le shape.
+async function fetchAllAAPages(apiKey) {
+  const all = [];
+  const first = await attemptFetch(AA_URL, 2, { headers: { 'x-api-key': apiKey } });
+  const firstJson = await first.json();
+  const totalPages = firstJson.pagination?.total_pages ?? 1;
+  all.push(...firstJson.data);
+
+  for (let page = 2; page <= totalPages; page++) {
+    const res = await attemptFetch(`${AA_URL}?page=${page}`, 2, { headers: { 'x-api-key': apiKey } });
+    const json = await res.json();
+    all.push(...(json.data ?? []));
+  }
+
+  // Dédoublonnage par slug (un modèle peut apparaître sur plusieurs pages).
+  const dedup = [...new Map(all.map((m) => [m.slug, m])).values()];
+  return dedup.map(mapAAModel);
+}
+
+export function mapAAModel(raw) {
+  return {
+    slug: raw.slug,
+    name: raw.name,
+    intelligence_index: raw.evaluations?.artificial_analysis_intelligence_index ?? null,
+    artificial_analysis_coding_index: raw.evaluations?.artificial_analysis_coding_index ?? null,
+    artificial_analysis_agentic_index: raw.evaluations?.artificial_analysis_agentic_index ?? null,
+    median_output_tokens_per_second: raw.performance?.median_output_tokens_per_second ?? null,
+  };
+}
+
+async function withCache(name, ttl, force, produce, urlLabel) {
   const cache = readCache(name);
   const fresh = cache && Date.now() - cache.cached_at < ttl;
   if (!force && fresh) return cache.data;
 
   try {
-    const res = await attemptFetch(url, 2, init);
-    const data = (await res.json()).data;
+    const data = await produce();
     writeCache(name, data);
     return data;
   } catch (err) {
-    // Si un run précédent a laissé un cache exploitable, on le préserve.
     if (cache) {
       console.error('⚠ Cache utilisé — impossible de rafraîchir les données');
       return cache.data;
     }
     throw new Error(
-      `Échec de récupération des modèles (${url}) : ${err.message}. ` +
+      `Échec de récupération des modèles (${urlLabel}) : ${err.message}. ` +
         'Si le réseau est temporairement indisponible, un cache récent reste utilisable.'
     );
   }

@@ -1,0 +1,19 @@
+{
+  "tier": "free",
+  "intelligence_index_version": "4.3",
+  "pagination": { "page": 1, "page_size": 200, "total_pages": 1, "has_more": false },
+  "data": [
+    { "id": "aa-1", "slug": "model-alpha", "name": "Model Alpha",
+      "evaluations": { "artificial_analysis_intelligence_index": 60, "artificial_analysis_coding_index": 55, "artificial_analysis_agentic_index": 80 },
+      "performance": { "median_output_tokens_per_second": 100 } },
+    { "id": "aa-2", "slug": "model-beta", "name": "Model Beta",
+      "evaluations": { "artificial_analysis_intelligence_index": 40, "artificial_analysis_coding_index": 45, "artificial_analysis_agentic_index": 30 },
+      "performance": { "median_output_tokens_per_second": 200 } },
+    { "id": "aa-3", "slug": "alias-special", "name": "Special",
+      "evaluations": { "artificial_analysis_intelligence_index": 55, "artificial_analysis_coding_index": 50, "artificial_analysis_agentic_index": 40 },
+      "performance": { "median_output_tokens_per_second": 80 } },
+    { "id": "aa-4", "slug": "model-gamma", "name": "Model Gamma",
+      "evaluations": { "artificial_analysis_intelligence_index": null, "artificial_analysis_coding_index": null, "artificial_analysis_agentic_index": null },
+      "performance": { "median_output_tokens_per_second": null } }
+  ]
+}
