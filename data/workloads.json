@@ -1,0 +1,5 @@
+{
+  "chat":      { "input": 1000,  "output": 500,  "cache_read": 0 },
+  "agent":     { "input": 20000, "output": 8000, "cache_read": 100000 },
+  "reasoning": { "input": 1500,  "output": 12000, "cache_read": 0 }
+}
