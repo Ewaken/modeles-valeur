@@ -2,7 +2,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadApiKey, fetchAAModels, fetchOpenRouterModels } from './api.mjs';
 import { matchModels, loadAliases } from './normalize.mjs';
-import { buildPoints, rank } from './score.mjs';
+import { buildPoints, rank, dedupByOrId } from './score.mjs';
 
 const SKILL_DIR = dirname(dirname(fileURLToPath(import.meta.url)));
 
@@ -134,7 +134,9 @@ export async function main(argv) {
       fetchOpenRouterModels({ force: opts.force }),
     ]);
     const matches = matchModels(aaModels, orModels, loadAliases(aliasesPath()));
-    let points = buildPoints(matches, {
+    const { matches: deduped, merged } = dedupByOrId(matches, opts.index);
+    if (merged > 0) console.error(`${merged} variante(s) AA fusionnée(s) vers leur modèle OpenRouter de base`);
+    let points = buildPoints(deduped, {
       workload: opts.workload,
       scenario: opts.scenario,
       index: opts.index,
