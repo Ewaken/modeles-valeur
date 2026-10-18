@@ -32,7 +32,7 @@ after(() => {
   delete process.env.MODELES_VALEUR_ALIASES;
 });
 
-import { main, isDirectRun } from '../scripts/rank.mjs';
+import { main, isDirectRun, formatTable } from '../scripts/rank.mjs';
 
 async function run(argv) {
   const origOut = process.stdout.write;
@@ -91,6 +91,23 @@ test('--index math est rejeté', async () => {
   const { code, out } = await run(['--index', 'math']);
   assert.equal(code, 1);
   assert.match(out, /agentic/);
+});
+
+test('formatTable : coût en µ$ et truncation', () => {
+  const points = [{
+    aa: { slug: 'claude-haiku-5-5-xhigh' },
+    or: { id: 'inclusionai/ling-3.0-flash' },
+    quality: 43.4,
+    costPerTask: 0.0000525,
+    value: 826666.67,
+    speed: 120,
+    pareto: true,
+  }];
+  const out = formatTable(points, 'current', 'chat', 'intelligence');
+  assert.ok(out.includes('Coût (µ$)'), 'en-tête en µ$');
+  assert.ok(out.includes('52.5'), '0.0000525 $ → 52.5 µ$');
+  assert.ok(!out.includes('0.000052'), 'plus de 6 décimales');
+  assert.ok(!out.includes('xhighinclusionai'), 'colonnes non soudées');
 });
 
 test('le garde CLI compare les chemins après résolution', () => {

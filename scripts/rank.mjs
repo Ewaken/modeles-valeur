@@ -66,32 +66,41 @@ function parseArgs(argv) {
   return opts;
 }
 
-const W = { n: 4, modele: 16, or: 26, qualite: 8, cout: 12, valeur: 14, speed: 6, pareto: 7 };
+// Coût en µ$ (millionièmes de $). Pour changer d'unité, ne modifier que ce
+// libellé et le facteur 1e6 dans la cellule « cout ».
+const UNIT_LABEL = 'Coût (µ$)';
+const MAX_WIDTH = { modele: 30, or: 34 };
 
 export function formatTable(points, scenario, workload, index) {
-  const cell = (s, w) => String(s).padEnd(w);
-  const header =
-    cell('#', W.n) +
-    cell('Modèle (AA)', W.modele) +
-    cell('OpenRouter', W.or) +
-    cell('Qualité', W.qualite) +
-    cell('Coût/tâche ($)', W.cout) +
-    cell('Valeur (pts/$)', W.valeur) +
-    cell('tok/s', W.speed) +
-    cell('Pareto', W.pareto).trimEnd();
-  const rows = points.map((p, i) =>
-    [
-      cell(i + 1, W.n),
-      cell(p.aa.slug, W.modele),
-      cell(p.or.id, W.or),
-      cell(p.quality, W.qualite),
-      cell(p.costPerTask.toFixed(6), W.cout),
-      cell(p.value.toFixed(2), W.valeur),
-      cell(p.speed ?? '—', W.speed),
-      cell(p.pareto ? 'oui' : 'non', W.pareto).trimEnd(),
-    ].join('')
-  );
-  return [header, ...rows, '', `Scénario de prix : ${scenario} · Profil : ${workload} · Index : ${index}`].join('\n') + '\n';
+  const rows = points.map((p, i) => ({
+    '#': String(i + 1),
+    modele: p.aa.slug,
+    or: p.or.id,
+    qualite: String(p.quality),
+    cout: (p.costPerTask * 1e6).toFixed(1),
+    valeur: p.value.toFixed(2),
+    speed: p.speed == null ? '—' : String(p.speed),
+    pareto: p.pareto ? 'oui' : 'non',
+  }));
+
+  const keys = ['#', 'modele', 'or', 'qualite', 'cout', 'valeur', 'speed', 'pareto'];
+  const headers = ['#', 'Modèle (AA)', 'OpenRouter', 'Qualité', UNIT_LABEL, 'Valeur (pts/$)', 'tok/s', 'Pareto'];
+
+  const widths = keys.map((k, i) => {
+    let w = headers[i].length;
+    for (const r of rows) w = Math.max(w, r[k].length);
+    return Math.min(w, MAX_WIDTH[k] ?? w);
+  });
+
+  const cell = (s, w) => {
+    const t = String(s);
+    return t.length > w ? t.slice(0, w - 1) + '…' : t.padEnd(w);
+  };
+
+  const line = (r) => keys.map((k, i) => cell(r[k], widths[i])).join(' ').trimEnd();
+
+  const header = line(Object.fromEntries(keys.map((k, i) => [k, headers[i]])));
+  return [header, ...rows.map(line), '', `Scénario de prix : ${scenario} · Profil : ${workload} · Index : ${index}`].join('\n') + '\n';
 }
 
 export function toJson(points, meta) {
